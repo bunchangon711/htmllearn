@@ -1,0 +1,45 @@
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+ }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+ }
+}
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+   }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+   }
+  }
+.animated-paragraph {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.animated-paragraph.slideInFromLeft {
+    opacity: 1;
+}
+html{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #d6cebe;
+    color: rgb(57, 75, 190);
+}
+h1{
+    font-family: Brush Script MT;
+    animation-name: fadeIn;
+    animation-duration: 4s;
+}
